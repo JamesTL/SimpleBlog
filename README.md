@@ -18,7 +18,7 @@ Clone repository into local directory.
 
 Navigate to project directory.
 
-Run `npm install`` to install project dependencies.
+Run `npm install` to install project dependencies.
 
 
 ## Development server
