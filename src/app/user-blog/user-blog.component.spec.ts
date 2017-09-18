@@ -141,7 +141,7 @@ describe('UserBlogComponent', () => {
     });
     it('should count the number of userPosts', () => {
         //arrange
-        let expectedResult:Array =4
+        let expectedResult:Array =4;
         //act
         fixture.detectChanges();
         //assert

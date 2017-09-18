@@ -70,7 +70,7 @@ describe('PostsService', () => {
             });
 
             let posts:Array = [];
-            postsService.getUserPosts(1).subscribe(data => {
+            postsService.getUserPosts(1).subscribe((data) => {
                 posts = data;
             });
 

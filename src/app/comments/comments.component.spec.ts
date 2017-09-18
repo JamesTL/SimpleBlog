@@ -39,7 +39,7 @@ class MockCommentsService {
             }
         ];
 
-    public getCommentForPosts(postID:number):Observable {
+    public getCommentForPosts(postID:number):Observable<Array<any>>{
 
         if (postID) {
             return Observable.of(this.testComments);

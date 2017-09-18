@@ -163,7 +163,7 @@ describe('UsersService', () => {
             let users:Array = [];
 
             //act
-            usersService.getUser(2).subscribe(data => {
+            usersService.getUser(2).subscribe((data) => {
                 users = data;
             });
 

@@ -12,19 +12,17 @@ export class UsersService {
 
     constructor(private http:Http) {}
 
-
     //retrieve all users
     getAllUsers():Observable<Array<any>>{
         let apiUrl = `${this.apiRoot}`;
-        return this.http.get(apiUrl).map(res=>res.json());
-
+        return this.http.get(apiUrl).map((res)=>res.json());
     }
 
     //retrieve a single user by user id
     getUser(userID:number):Observable<Array<any>>{
 
         let apiUrl = this.apiRoot+'/'+userID;
-        return this.http.get(apiUrl).map(res=>res.json());
+        return this.http.get(apiUrl).map((res)=>res.json());
     }
 
 }

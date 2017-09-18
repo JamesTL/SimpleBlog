@@ -74,8 +74,8 @@ describe('CommentsService', () => {
             });
 
             let comments:Array=[];
-            commentsService.getCommentForPosts(1).subscribe(c => {
-                comments = c;
+            commentsService.getCommentForPosts(1).subscribe((data) => {
+                comments = data;
             });
 
             // synchronous code!?

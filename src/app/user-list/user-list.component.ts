@@ -21,7 +21,7 @@ export class UserListComponent implements OnInit {
                 this.users = data;
                 this.numberOfUsers = data.length;
             },
-            err=> {
+            (err) => {
                 this.errorMessage = err;
                 console.log(this.errorMessage);
             });

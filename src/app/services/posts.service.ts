@@ -12,12 +12,11 @@ export class PostsService {
     constructor(private http:Http) {}
 
 
-
-    getUserPosts(userID:number) {
+    getUserPosts(userID:number):Observable<Array<any>> {
 
         let apiUrl = this.apiRoot + userID;
 
-        return this.http.get(apiUrl).map(res=>res.json());
+        return this.http.get(apiUrl).map((res)=>res.json());
 
     }
 

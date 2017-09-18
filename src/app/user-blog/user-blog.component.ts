@@ -31,7 +31,7 @@ export class UserBlogComponent implements OnInit {
             this.userID = params['id'];
         });
 
-       // get user
+        // get user
         this.userService.getUser(this.userID).subscribe(user=> {
             this.selectedUser = user;
             this.name = user['name'];
@@ -39,14 +39,14 @@ export class UserBlogComponent implements OnInit {
 
 
         })
-       // get posts
+        // get posts
         this.postsService.getUserPosts(this.userID).subscribe((data)=> {
 
                 this.userPosts = data;
                 this.numberOfPosts = data.length
 
             },
-            err=> {
+            (err)=> {
                 this.errorMessage = err;
                 console.log(this.errorMessage);
             });
