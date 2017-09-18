@@ -10,7 +10,7 @@ Both the CLI and generated project have dependencies that require Node 6.9.0 or 
 
 
 ## [Angular CLI] Instllation
-```npm install -g @angular/cli
+```npm install -g @angular/cli```
 
 
 ## Development server
