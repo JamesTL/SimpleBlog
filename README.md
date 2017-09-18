@@ -16,10 +16,9 @@ Both the CLI and generated project have dependencies that require Node 6.9.0 or 
 
 Clone repository into local directory.
 
-Navigate to project directory
+Navigate to project directory.
 
-Install project dependencies
-```npm install```
+Run `npm install`` to install project dependencies.
 
 
 ## Development server
