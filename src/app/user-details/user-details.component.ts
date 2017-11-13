@@ -13,7 +13,7 @@ export class UserDetailsComponent implements OnInit {
    constructor() { }
 
   ngOnInit() {
-console.log(this.currentUser);
+    console.log(this.currentUser);
     this.user = this.currentUser;
 
   }

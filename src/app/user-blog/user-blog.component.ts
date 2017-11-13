@@ -3,6 +3,7 @@ import {ActivatedRoute, Params} from '@angular/router';
 
 import { UsersService } from  './../services/users.service';
 import { PostsService } from  './../services/posts.service';
+import { UserBlogComponent} from  './../user-blog/user-blog';
 
 
 @Component({
