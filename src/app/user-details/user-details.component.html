@@ -1,0 +1,13 @@
+<div class="card" data-test-el="blogListingCard">
+    <div class="card-header">
+
+        <h2 class="card-title h5 m-0">{{user.name}}</h2>
+
+        <p class="m-0">
+            <small>Username: <strong>{{user.username}}</strong></small>
+        </p>
+    </div>
+    <div class="card-footer">
+        <a [routerLink]="['/user',user.id]" class="btn btn-primary btn-block btn-sm">View this Blog</a>
+    </div>
+</div>

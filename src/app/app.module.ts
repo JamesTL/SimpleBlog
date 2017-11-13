@@ -12,6 +12,7 @@ import { UsersService} from './services/users.service';
 import { PostsService} from './services/posts.service';
 import {CommentsService} from './services/comments.service';
 import { CommentsComponent } from './comments/comments.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CommentsComponent } from './comments/comments.component';
         AppComponent,
         UserListComponent,
         UserBlogComponent,
-        CommentsComponent
+        CommentsComponent,
+        UserDetailsComponent
     ],
     imports: [
         BrowserModule,

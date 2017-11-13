@@ -1,22 +1,11 @@
 <div class="jumbotron">
     <h1 class="mb0">Blog Listing</h1>
-    <p class="lead mb-0">There are {{numberOfUsers}} available blogs. Select a user and view their blog</p>
-
+    <p  data-test-el="homeLeadText" class="lead mb-0">There are {{numberOfUsers}} available blogs. Select a user and view their blog</p>
 </div>
-
-
 <div class="row">
     <div class="card-group">
         <div *ngFor="let user of users" class="col-lg-4 mb-3">
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title h5 m-0">{{user.name}}</h2>
-                   <p class="m-0"><small>Username: <strong>{{user.username}}</strong></small></p>
-                </div>
-                 <div class="card-footer">
-                    <a [routerLink]="['/user',user.id]" class="btn btn-primary btn-block btn-sm">View this Blog</a>
-                </div>
-            </div>
+           <app-user-details [currentUser]="user"></app-user-details>
         </div>
     </div>
 </div>
